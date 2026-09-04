@@ -1,18 +1,15 @@
 public class Smartphone extends Product {
-    private double weight; // Cân nặng tính theo gram
+    private double weight;
 
-    // Default constructor
     public Smartphone() {
         super();
     }
 
-    // Full-argument constructor
     public Smartphone(String id, String name, double price, double weight) {
         super(id, name, price);
         this.weight = weight;
     }
 
-    // Getter and Setter
     public double getWeight() {
         return weight;
     }
@@ -21,7 +18,6 @@ public class Smartphone extends Product {
         this.weight = weight;
     }
 
-    // Display method
     @Override
     public void displayInfo() {
         super.displayInfo();

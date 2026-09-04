@@ -3,18 +3,15 @@ public class Product {
     private String name;
     private double price;
 
-    // Default constructor
     public Product() {
     }
 
-    // Parameterized constructor
     public Product(String id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    // Getters and Setters
     public String getId() {
         return id;
     }
@@ -39,7 +36,6 @@ public class Product {
         this.price = price;
     }
 
-    // Display method
     public void displayInfo() {
         System.out.printf("Mã SP: %-8s | Tên SP: %-25s | Giá: %,.0f VNĐ", id, name, price);
     }

@@ -1,18 +1,15 @@
 public class Laptop extends Product {
     private String brand;
 
-    // Default constructor
     public Laptop() {
         super();
     }
 
-    // Full-argument constructor
     public Laptop(String id, String name, double price, String brand) {
         super(id, name, price);
         this.brand = brand;
     }
 
-    // Getter and Setter
     public String getBrand() {
         return brand;
     }
@@ -21,7 +18,6 @@ public class Laptop extends Product {
         this.brand = brand;
     }
 
-    // Display method
     @Override
     public void displayInfo() {
         super.displayInfo();

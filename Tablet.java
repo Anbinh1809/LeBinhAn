@@ -1,18 +1,15 @@
 public class Tablet extends Product {
-    private double screenSize; // Kích thước màn hình (inch)
+    private double screenSize;
 
-    // Default constructor
     public Tablet() {
         super();
     }
 
-    // Full-argument constructor
     public Tablet(String id, String name, double price, double screenSize) {
         super(id, name, price);
         this.screenSize = screenSize;
     }
 
-    // Getter and Setter
     public double getScreenSize() {
         return screenSize;
     }
@@ -21,7 +18,6 @@ public class Tablet extends Product {
         this.screenSize = screenSize;
     }
 
-    // Display method
     @Override
     public void displayInfo() {
         super.displayInfo();
